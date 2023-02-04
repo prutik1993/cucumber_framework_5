@@ -16,4 +16,8 @@ public class TextHandler {
         }
         return answer;
     }
+
+    public static long getLong(String str){
+        return Long.parseLong(str.replaceAll("[^0-9]",""));
+    }
 }
