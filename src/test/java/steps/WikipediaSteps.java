@@ -3,13 +3,11 @@ package steps;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.cucumber.datatable.DataTable;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import pages.WikipediaSearchPage;
 import utils.Driver;
-import io.cucumber.datatable.DataTable;
-
-import java.util.List;
 
 public class WikipediaSteps {
     WebDriver driver;

@@ -1,6 +1,7 @@
 /Users/anastasiyaprudnikova/IdeaProjects/cucumber_framework_5/src/test/java/utils/AlertHandler.java
 /Users/anastasiyaprudnikova/IdeaProjects/cucumber_framework_5/src/test/java/steps/BaseSteps.java
 /Users/anastasiyaprudnikova/IdeaProjects/cucumber_framework_5/src/test/java/pages/GoogleSearchPage.java
+/Users/anastasiyaprudnikova/IdeaProjects/cucumber_framework_5/src/test/java/steps/EtcySteps.java
 /Users/anastasiyaprudnikova/IdeaProjects/cucumber_framework_5/src/test/java/runners/Runner.java
 /Users/anastasiyaprudnikova/IdeaProjects/cucumber_framework_5/src/test/java/steps/WikipediaSteps.java
 /Users/anastasiyaprudnikova/IdeaProjects/cucumber_framework_5/src/test/java/steps/Hooks.java
@@ -17,4 +18,5 @@
 /Users/anastasiyaprudnikova/IdeaProjects/cucumber_framework_5/src/test/java/steps/GoogleSteps.java
 /Users/anastasiyaprudnikova/IdeaProjects/cucumber_framework_5/src/test/java/pages/TechGlobalBasePage.java
 /Users/anastasiyaprudnikova/IdeaProjects/cucumber_framework_5/src/test/java/pages/TechGlobalFrontendTestingHomePage.java
+/Users/anastasiyaprudnikova/IdeaProjects/cucumber_framework_5/src/test/java/pages/EtcyPage.java
 /Users/anastasiyaprudnikova/IdeaProjects/cucumber_framework_5/src/test/java/pages/TechGlobalLoginFormPage.java
