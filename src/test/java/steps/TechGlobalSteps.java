@@ -129,10 +129,19 @@ public class TechGlobalSteps {
      techGlobalLoginFormPage.inputs.get(1).sendKeys(password);
      techGlobalLoginFormPage.loginButton.click();
     }
-
     @Then("user should see a {string} message")
     public void user_should_see_a_message(String message) {
-        Assert.assertEquals(message,techGlobalLoginFormPage.errorMessage.getText());
+        switch (message){
+            case "Invalid Username entered!":
+            case "Invalid Password entered!":
+                Assert.assertEquals(message,techGlobalLoginFormPage.errorMessage.getText());
+                break;
+            case "You are logged in":
+                Assert.assertEquals(message,techGlobalLoginFormPage.messageAfterSuccessfulLogin.getText());
+                break;
+            default:
+                throw new NotFoundException("The error is not defined properly in the feature file");
+        }
     }
 
 
