@@ -1,5 +1,4 @@
 Feature: Validate Etcy Functionality
-
   Scenario:
     Given user navigates to "https://www.etsy.com/"
     Then user should see dropdown options

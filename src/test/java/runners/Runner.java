@@ -10,7 +10,9 @@ import org.junit.runner.RunWith;
         glue = "steps",
         tags = "@WikiLanguages",
         dryRun = false,
-        monochrome = false
+        monochrome = false,
+        plugin = {"html:target/cucumber-reports",
+        "json:target/cucumber-reports/Cucumber.json"}
 )
 public class Runner {
 

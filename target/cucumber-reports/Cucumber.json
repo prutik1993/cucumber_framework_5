@@ -1,0 +1,153 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1375500542,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to \"https://www.wikipedia.org/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.wikipedia.org/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6737964584,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TechGlobalSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 454042,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 23833,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 471042,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1435667,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EtcySteps.setup()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Validate Wikipedia main languages",
+        "description": "",
+        "id": "validate-wikipedia-search;validate-wikipedia-main-languages",
+        "after": [
+          {
+            "result": {
+              "duration": 90601917,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 439960875,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user should see below languages around the logo",
+            "match": {
+              "location": "WikipediaSteps.user_should_see_below_languages_around_the_logo(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "English",
+                  "Русский",
+                  "日本語",
+                  "Deutsch",
+                  "Français",
+                  "Español",
+                  "Italiano",
+                  "中文",
+                  "فارسی",
+                  "Polski"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Wiki"
+          },
+          {
+            "name": "@WikiLanguages"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Wikipedia Search",
+    "description": "",
+    "id": "validate-wikipedia-search",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/wikipedia.feature",
+    "tags": [
+      {
+        "name": "@Wiki",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
