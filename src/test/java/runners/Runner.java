@@ -8,11 +8,13 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "steps",
-        tags = "@WikiLanguages",
+        tags = "",
         dryRun = false,
         monochrome = false,
         plugin = {"html:target/cucumber-reports",
-        "json:target/cucumber-reports/Cucumber.json"}
+        "json:target/cucumber-reports/Cucumber.json",
+        "pretty"
+        }
 )
 public class Runner {
 

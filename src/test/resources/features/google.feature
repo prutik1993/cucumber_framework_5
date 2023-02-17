@@ -1,5 +1,6 @@
-Feature: Google Search Functionality
 @Regression
+Feature: Google Search Functionality
+
   Scenario: Validate Google Search
     Given user navigates to "https://www.google.com/"
     When user search for "Tesla"

@@ -1,5 +1,1343 @@
 [
   {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5719028500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TechGlobalSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 540500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 27459,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 876584,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EtcySteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2542000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "",
+        "description": "",
+        "id": "validate-etcy-functionality;",
+        "after": [
+          {
+            "result": {
+              "duration": 130567542,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5602500000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user navigates to \"https://www.etsy.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.etsy.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1334174167,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should see dropdown options",
+            "match": {
+              "location": "EtcySteps.user_should_see_dropdown_options(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Gifts for Every Valentine",
+                  "Jewelry \u0026 Accessories",
+                  "Clothing \u0026 Shoes",
+                  "Home \u0026 Living",
+                  "Wedding \u0026 Party",
+                  "Toys \u0026 Entertainment",
+                  "Art \u0026 Collectibles",
+                  "Craft Supplies",
+                  "Gifts \u0026 Gift Cards"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validate Etcy Functionality",
+    "description": "",
+    "id": "validate-etcy-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/etcy.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4780372667,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TechGlobalSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 170834,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 8791,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 36500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EtcySteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 160167,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Validate Google Search",
+        "description": "",
+        "id": "google-search-functionality;validate-google-search",
+        "after": [
+          {
+            "result": {
+              "duration": 106547250,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4945251125,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to \"https://www.google.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.google.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8289512917,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user search for \"Tesla\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tesla\"",
+                  "offset": 16
+                }
+              ],
+              "location": "GoogleSteps.user_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8955583,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should see \"Tesla\" in the url",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tesla\"",
+                  "offset": 16
+                }
+              ],
+              "location": "BaseSteps.user_should_see_in_the_url(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13846792,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should see \"Tesla\" in the title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tesla\"",
+                  "offset": 16
+                }
+              ],
+              "location": "BaseSteps.user_should_see_in_the_title(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5211955042,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TechGlobalSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 581708,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 13292,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 39917,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EtcySteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 59792,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Validate Google Search results",
+        "description": "",
+        "id": "google-search-functionality;validate-google-search-results",
+        "after": [
+          {
+            "result": {
+              "duration": 484524583,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5029827167,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user navigates to \"https://www.google.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.google.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13814107292,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user search for \"Apple\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apple\"",
+                  "offset": 16
+                }
+              ],
+              "location": "GoogleSteps.user_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72977750,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user should see result are more 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 32
+                }
+              ],
+              "location": "GoogleSteps.userShouldSeeResultAreMore(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Google Search Functionality",
+    "description": "",
+    "id": "google-search-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/google.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1442422416,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user navigates to \"https://techglobal-training.netlify.app/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://techglobal-training.netlify.app/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4734752125,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TechGlobalSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 132208,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 12709,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 52041,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EtcySteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 53958,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Validate dynamic tables pop-up window",
+        "description": "",
+        "id": "techglobal-training-functionalities;validate-dynamic-tables-pop-up-window",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)\n\tat utils.Driver.quitDriver(Driver.java:45)\n\tat steps.Hooks.teardown(Hooks.java:23)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.TestCase.run(TestCase.java:48)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:124)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:133)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\n",
+              "duration": 13789500,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n*** Element info: {Using\u003did, value\u003ddropdown-button}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\n\tat steps.TechGlobalSteps.userClicksOnPracticesDropdownInTheHeader(TechGlobalSteps.java:38)\n\tat ✽.user clicks on Practices dropdown in the header(src/test/resources/features/techGlobal.feature:8)\n",
+              "duration": 43639583,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user clicks on Practices dropdown in the header",
+            "match": {
+              "location": "TechGlobalSteps.userClicksOnPracticesDropdownInTheHeader()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12959,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user selects the \"Frontend Testing\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Frontend Testing\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TechGlobalSteps.userSelectsTheOption(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3084,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user selects the \"Dynamic Tables\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dynamic Tables\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TechGlobalSteps.userSelectsTheOption(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2291,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user should see \"Dynamic Tables\" heading",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dynamic Tables\"",
+                  "offset": 16
+                }
+              ],
+              "location": "TechGlobalSteps.userShouldSeeHeading(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2125,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user clicks the \"ADD PRODUCT\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ADD PRODUCT\"",
+                  "offset": 16
+                }
+              ],
+              "location": "TechGlobalSteps.userClicksTheButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2250,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "validate \"Add New Product\" pop-up is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add New Product\"",
+                  "offset": 9
+                }
+              ],
+              "location": "TechGlobalSteps.validatePopUpIsDisplayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user clicks the \"CLOSE\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CLOSE\"",
+                  "offset": 16
+                }
+              ],
+              "location": "TechGlobalSteps.userClicksTheButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2042,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user should not see Add New Product pop-up",
+            "match": {
+              "location": "TechGlobalSteps.userShouldNotSeeAddNewProductPopUp()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\n\tat steps.BaseSteps.userNavigatesTo(BaseSteps.java:21)\n\tat ✽.user navigates to \"https://techglobal-training.netlify.app/\"(src/test/resources/features/techGlobal.feature:4)\n",
+              "duration": 5018875,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "user navigates to \"https://techglobal-training.netlify.app/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://techglobal-training.netlify.app/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4790375,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TechGlobalSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 176584,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 12875,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 39166,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EtcySteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 46542,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Validate Alert card page",
+        "description": "",
+        "id": "techglobal-training-functionalities;validate-alert-card-page",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)\n\tat utils.Driver.quitDriver(Driver.java:45)\n\tat steps.Hooks.teardown(Hooks.java:23)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.TestCase.run(TestCase.java:48)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:124)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:133)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\n",
+              "duration": 6488333,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8584,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user clicks on Practices dropdown in the header",
+            "match": {
+              "location": "TechGlobalSteps.userClicksOnPracticesDropdownInTheHeader()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2459,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user selects the \"Frontend Testing\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Frontend Testing\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TechGlobalSteps.userSelectsTheOption(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2167,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user selects the \"Alerts\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Alerts\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TechGlobalSteps.userSelectsTheOption(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2042,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "user should see \"Alerts\" heading",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Alerts\"",
+                  "offset": 16
+                }
+              ],
+              "location": "TechGlobalSteps.userShouldSeeHeading(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2125,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user should see buttons as \"Warning alert\", \"Confirmation alert\", and \"Prompt alert\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Warning alert\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Confirmation alert\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Prompt alert\"",
+                  "offset": 70
+                }
+              ],
+              "location": "TechGlobalSteps.user_should_see_buttons_as_and(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2042,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "user should see \"Result:\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Result:\"",
+                  "offset": 16
+                }
+              ],
+              "location": "TechGlobalSteps.user_should_see_text(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2417,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "user clicks on \"Warning alert\" box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Warning alert\"",
+                  "offset": 15
+                }
+              ],
+              "location": "TechGlobalSteps.user_clicks_on_box(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2125,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "user should see a popup displaying message \"You are on TechGlobal Training application.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"You are on TechGlobal Training application.\"",
+                  "offset": 43
+                }
+              ],
+              "location": "TechGlobalSteps.user_should_see_a_popup_displaying_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "TechGlobal Training Functionalities",
+    "description": "",
+    "id": "techglobal-training-functionalities",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/techGlobal.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\n\tat steps.BaseSteps.userNavigatesTo(BaseSteps.java:21)\n\tat ✽.user navigates to \"https://techglobal-training.netlify.app/\"(src/test/resources/features/techGlobalLogin.feature:6)\n",
+              "duration": 5169875,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user navigates to \"https://techglobal-training.netlify.app/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://techglobal-training.netlify.app/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2875,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user clicks on Practices dropdown in the header",
+            "match": {
+              "location": "TechGlobalSteps.userClicksOnPracticesDropdownInTheHeader()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1541,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user selects the \"Frontend Testing\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Frontend Testing\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TechGlobalSteps.userSelectsTheOption(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1250,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user selects the \"Login Form\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login Form\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TechGlobalSteps.userSelectsTheOption(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1291,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user should see \"Login Form\" heading",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login Form\"",
+                  "offset": 16
+                }
+              ],
+              "location": "TechGlobalSteps.userShouldSeeHeading(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1681958,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TechGlobalSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1083458,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 11000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 38334,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EtcySteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 36458,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Validate login",
+        "description": "",
+        "id": "techglobal-training-functionalities;validate-login;;2",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)\n\tat utils.Driver.quitDriver(Driver.java:45)\n\tat steps.Hooks.teardown(Hooks.java:23)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.TestCase.run(TestCase.java:48)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:124)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:133)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\n",
+              "duration": 9432875,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1334,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user enters username as \"johndoe\" and password as \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"johndoe\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"123456\"",
+                  "offset": 50
+                }
+              ],
+              "location": "TechGlobalSteps.user_enters_username_as_and_password_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1333,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user should see a \"Invalid Username entered!\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid Username entered!\"",
+                  "offset": 18
+                }
+              ],
+              "location": "TechGlobalSteps.user_should_see_a_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\n\tat steps.BaseSteps.userNavigatesTo(BaseSteps.java:21)\n\tat ✽.user navigates to \"https://techglobal-training.netlify.app/\"(src/test/resources/features/techGlobalLogin.feature:6)\n",
+              "duration": 9883125,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user navigates to \"https://techglobal-training.netlify.app/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://techglobal-training.netlify.app/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3625,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user clicks on Practices dropdown in the header",
+            "match": {
+              "location": "TechGlobalSteps.userClicksOnPracticesDropdownInTheHeader()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1833,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user selects the \"Frontend Testing\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Frontend Testing\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TechGlobalSteps.userSelectsTheOption(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1250,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user selects the \"Login Form\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login Form\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TechGlobalSteps.userSelectsTheOption(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1250,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user should see \"Login Form\" heading",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login Form\"",
+                  "offset": 16
+                }
+              ],
+              "location": "TechGlobalSteps.userShouldSeeHeading(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 849458,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TechGlobalSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 69000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6459,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 30000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EtcySteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 36333,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Validate login",
+        "description": "",
+        "id": "techglobal-training-functionalities;validate-login;;3",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)\n\tat utils.Driver.quitDriver(Driver.java:45)\n\tat steps.Hooks.teardown(Hooks.java:23)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.TestCase.run(TestCase.java:48)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:124)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:133)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\n",
+              "duration": 12911375,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1333,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user enters username as \"tomsmith\" and password as \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tomsmith\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"12345\"",
+                  "offset": 51
+                }
+              ],
+              "location": "TechGlobalSteps.user_enters_username_as_and_password_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1250,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user should see a \"Invalid Username entered!\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid Username entered!\"",
+                  "offset": 18
+                }
+              ],
+              "location": "TechGlobalSteps.user_should_see_a_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "TechGlobal Training Functionalities",
+    "description": "",
+    "id": "techglobal-training-functionalities",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/techGlobalLogin.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
     "line": 2,
     "elements": [
       {
@@ -11,8 +1349,9 @@
         "steps": [
           {
             "result": {
-              "duration": 1375500542,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\n\tat steps.BaseSteps.userNavigatesTo(BaseSteps.java:21)\n\tat ✽.user navigates to \"https://www.wikipedia.org/\"(src/test/resources/features/wikipedia.feature:5)\n",
+              "duration": 5316042,
+              "status": "failed"
             },
             "line": 5,
             "name": "user navigates to \"https://www.wikipedia.org/\"",
@@ -33,7 +1372,7 @@
         "before": [
           {
             "result": {
-              "duration": 6737964584,
+              "duration": 4923375,
               "status": "passed"
             },
             "match": {
@@ -42,25 +1381,7 @@
           },
           {
             "result": {
-              "duration": 454042,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GoogleSteps.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 23833,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseSteps.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 471042,
+              "duration": 798292,
               "status": "passed"
             },
             "match": {
@@ -69,11 +1390,797 @@
           },
           {
             "result": {
-              "duration": 1435667,
+              "duration": 9125,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 34125,
               "status": "passed"
             },
             "match": {
               "location": "EtcySteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 34083,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Validate first heading",
+        "description": "",
+        "id": "validate-wikipedia-search;validate-first-heading;;2",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)\n\tat utils.Driver.quitDriver(Driver.java:45)\n\tat steps.Hooks.teardown(Hooks.java:23)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.TestCase.run(TestCase.java:48)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:124)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:133)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\n",
+              "duration": 9408417,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3208,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user navigates to \"https://www.wikipedia.org/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.wikipedia.org/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1458,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user searches for \"Elon Musk\" on Wikipedia",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Elon Musk\"",
+                  "offset": 18
+                }
+              ],
+              "location": "WikipediaSteps.user_searches_for_on_Wikipedia(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1291,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user should see \"Elon Musk\" in the title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Elon Musk\"",
+                  "offset": 16
+                }
+              ],
+              "location": "BaseSteps.user_should_see_in_the_title(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1292,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user should see \"Elon Musk\" in the url",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Elon Musk\"",
+                  "offset": 16
+                }
+              ],
+              "location": "BaseSteps.user_should_see_in_the_url(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1959,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user should see \"Elon Musk\" in the first heading",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Elon Musk\"",
+                  "offset": 16
+                }
+              ],
+              "location": "WikipediaSteps.user_should_see_in_the_first_heading(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Wiki"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\n\tat steps.BaseSteps.userNavigatesTo(BaseSteps.java:21)\n\tat ✽.user navigates to \"https://www.wikipedia.org/\"(src/test/resources/features/wikipedia.feature:5)\n",
+              "duration": 6416375,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user navigates to \"https://www.wikipedia.org/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.wikipedia.org/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1464042,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TechGlobalSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 62958,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6917,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 23084,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EtcySteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 23584,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Validate first heading",
+        "description": "",
+        "id": "validate-wikipedia-search;validate-first-heading;;3",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)\n\tat utils.Driver.quitDriver(Driver.java:45)\n\tat steps.Hooks.teardown(Hooks.java:23)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.TestCase.run(TestCase.java:48)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:124)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:133)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\n",
+              "duration": 11434291,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3333,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user navigates to \"https://www.wikipedia.org/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.wikipedia.org/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1459,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user searches for \"Johnny Depp\" on Wikipedia",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Johnny Depp\"",
+                  "offset": 18
+                }
+              ],
+              "location": "WikipediaSteps.user_searches_for_on_Wikipedia(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1291,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user should see \"Johnny Depp\" in the title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Johnny Depp\"",
+                  "offset": 16
+                }
+              ],
+              "location": "BaseSteps.user_should_see_in_the_title(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1292,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user should see \"Johnny Depp\" in the url",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Johnny Depp\"",
+                  "offset": 16
+                }
+              ],
+              "location": "BaseSteps.user_should_see_in_the_url(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1291,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user should see \"Johnny Depp\" in the first heading",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Johnny Depp\"",
+                  "offset": 16
+                }
+              ],
+              "location": "WikipediaSteps.user_should_see_in_the_first_heading(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Wiki"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\n\tat steps.BaseSteps.userNavigatesTo(BaseSteps.java:21)\n\tat ✽.user navigates to \"https://www.wikipedia.org/\"(src/test/resources/features/wikipedia.feature:5)\n",
+              "duration": 4785542,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user navigates to \"https://www.wikipedia.org/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.wikipedia.org/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3042292,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TechGlobalSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 65583,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 7083,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 25583,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EtcySteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 23084,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Validate first heading",
+        "description": "",
+        "id": "validate-wikipedia-search;validate-first-heading;;4",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)\n\tat utils.Driver.quitDriver(Driver.java:45)\n\tat steps.Hooks.teardown(Hooks.java:23)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.TestCase.run(TestCase.java:48)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:124)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:133)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\n",
+              "duration": 12183542,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user navigates to \"https://www.wikipedia.org/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.wikipedia.org/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2833,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user searches for \"Madonna\" on Wikipedia",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Madonna\"",
+                  "offset": 18
+                }
+              ],
+              "location": "WikipediaSteps.user_searches_for_on_Wikipedia(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2833,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user should see \"Madonna\" in the title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Madonna\"",
+                  "offset": 16
+                }
+              ],
+              "location": "BaseSteps.user_should_see_in_the_title(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1583,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user should see \"Madonna\" in the url",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Madonna\"",
+                  "offset": 16
+                }
+              ],
+              "location": "BaseSteps.user_should_see_in_the_url(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1375,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user should see \"Madonna\" in the first heading",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Madonna\"",
+                  "offset": 16
+                }
+              ],
+              "location": "WikipediaSteps.user_should_see_in_the_first_heading(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Wiki"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\n\tat steps.BaseSteps.userNavigatesTo(BaseSteps.java:21)\n\tat ✽.user navigates to \"https://www.wikipedia.org/\"(src/test/resources/features/wikipedia.feature:5)\n",
+              "duration": 17335000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user navigates to \"https://www.wikipedia.org/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.wikipedia.org/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5213958,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TechGlobalSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 46500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6084,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 20875,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EtcySteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 20625,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Validate first heading",
+        "description": "",
+        "id": "validate-wikipedia-search;validate-first-heading;;5",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)\n\tat utils.Driver.quitDriver(Driver.java:45)\n\tat steps.Hooks.teardown(Hooks.java:23)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.TestCase.run(TestCase.java:48)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:124)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:133)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\n",
+              "duration": 7834208,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2667,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user navigates to \"https://www.wikipedia.org/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.wikipedia.org/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1250,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user searches for \"Lana Del Rey\" on Wikipedia",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lana Del Rey\"",
+                  "offset": 18
+                }
+              ],
+              "location": "WikipediaSteps.user_searches_for_on_Wikipedia(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2833,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user should see \"Lana Del Rey\" in the title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lana Del Rey\"",
+                  "offset": 16
+                }
+              ],
+              "location": "BaseSteps.user_should_see_in_the_title(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1125,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user should see \"Lana Del Rey\" in the url",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lana Del Rey\"",
+                  "offset": 16
+                }
+              ],
+              "location": "BaseSteps.user_should_see_in_the_url(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1083,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user should see \"Lana Del Rey\" in the first heading",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lana Del Rey\"",
+                  "offset": 16
+                }
+              ],
+              "location": "WikipediaSteps.user_should_see_in_the_first_heading(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Wiki"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\n\tat steps.BaseSteps.userNavigatesTo(BaseSteps.java:21)\n\tat ✽.user navigates to \"https://www.wikipedia.org/\"(src/test/resources/features/wikipedia.feature:5)\n",
+              "duration": 3494666,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user navigates to \"https://www.wikipedia.org/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.wikipedia.org/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2016250,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TechGlobalSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 220625,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 7291,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 25292,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EtcySteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 22417,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
             }
           }
         ],
@@ -84,11 +2191,12 @@
         "after": [
           {
             "result": {
-              "duration": 90601917,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d109.0.5414.119)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anastasiyas-MBP.local.tld\u0027, ip: \u0027fe80:0:0:0:479:86eb:f8c3:a0c9%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0.1\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/0h/c2qbf4y97p1...}, goog:chromeOptions: {debuggerAddress: localhost:51502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 000ea874f5a72daa812a0bcad7422d0d\n\tat sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)\n\tat utils.Driver.quitDriver(Driver.java:45)\n\tat steps.Hooks.teardown(Hooks.java:23)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.TestCase.run(TestCase.java:48)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:124)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:133)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\n",
+              "duration": 8191291,
+              "status": "failed"
             },
             "match": {
-              "location": "Hooks.teardown()"
+              "location": "Hooks.teardown(Scenario)"
             }
           }
         ],
@@ -97,8 +2205,8 @@
         "steps": [
           {
             "result": {
-              "duration": 439960875,
-              "status": "passed"
+              "duration": 3250,
+              "status": "skipped"
             },
             "line": 21,
             "name": "user should see below languages around the logo",
